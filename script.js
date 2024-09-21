@@ -495,7 +495,7 @@ function checkPassword() {
 
 // Mostrar los votos registrados
 function showVotes() {
-    fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vTTi8e2RtWdMWiCkeHOHfDApSNrvXeJ5Wl9SVVKrcZrwLpFWA6QhIk_AStvnI-gABpz5Qnawur7M3oZ/pubhtml")  // Aquí deberás configurar el acceso público a los datos
+    fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vTTi8e2RtWdMWiCkeHOHfDApSNrvXeJ5Wl9SVVKrcZrwLpFWA6QhIk_AStvnI-gABpz5Qnawur7M3oZ/pubhtml?widget=true&amp;headers=false"></iframe>")  // Aquí deberás configurar el acceso público a los datos
         .then(response => response.json())
         .then(data => {
             let option1Count = 0;
